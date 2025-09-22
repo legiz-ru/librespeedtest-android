@@ -514,14 +514,6 @@
     "sponsorURL": "https://riverside.rocks"
   },
   {
-    "name": "AAISP LibreSpeed",
-    "server": "https://speedtest.aa.net.uk/",
-    "dlURL": "backend/garbage.php",
-    "ulURL": "backend/empty.php",
-    "pingURL": "backend/empty.php",
-    "getIpURL": "backend/getIP.php"
-  },
-  {
     "name": "CZ cesnet IPv4",
     "server": "https://speedtest4.cesnet.cz/",
     "dlURL": "backend/garbage.php",
@@ -554,8 +546,8 @@
     "getIpURL": "backend/getIP.php"
   },
   {
-    "name": "RU orn.ru OREL",
-    "server": "https://speedtest.orn.ru/",
+    "name": "RU Sovtest Kursk",
+    "server": "https://speedtest.sovtest.net/",
     "dlURL": "backend/garbage.php",
     "ulURL": "backend/empty.php",
     "pingURL": "backend/empty.php",
@@ -563,7 +555,7 @@
   },
   {
     "name": "RU xtrim.ru SPB",
-    "server": "speedtest.xtrim.ru",
+    "server": "https://speedtest.xtrim.ru/",
     "dlURL": "backend/garbage.php",
     "ulURL": "backend/empty.php",
     "pingURL": "backend/empty.php",
@@ -642,8 +634,256 @@
     "getIpURL": "backend/getIP.php"
   },
   {
+    "name": "RU selfhost Novgorod RTK",
+    "server": "https://speedtest.antonerush.synology.me/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
     "name": "DNR Phoenix",
     "server": "http://speed.phoenix-dnr.ru/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "BY Neonet Brest",
+    "server": "https://speedtest.neonet.by/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "BY 1Net Minsk",
+    "server": "https://test.1net.by/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "BY NewIT Minsk",
+    "server": "https://speedtest.nit.by/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "BY IPTel Gomel",
+    "server": "https://speedtest.nit.by/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "LT Vurk Vilnius",
+    "server": "https://speedtest.vhf.lt/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "PL amelek.net Warsaw",
+    "server": "https://speedtest.amelek.net/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "PL University Poznan",
+    "server": "https://instrukcje.put.poznan.pl/speedtest/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "PL TASK Gdansk",
+    "server": "https://speedtest.task.gda.pl/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "SE ekjso Jonkoping",
+    "server": "https://speedtest.eksjo.com/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "SE universitet Linkopings",
+    "server": "https://speedtest.c.itn.liu.se/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "DE ramnet",
+    "server": "https://speed.ramnet.de/",
+    "dlURL": "garbage.php",
+    "ulURL": "empty.php",
+    "pingURL": "empty.php",
+    "getIpURL": "getIP.php"
+  },
+  {
+    "name": "DE Tuebingen University",
+    "server": "https://pipe.zdv.uni-tuebingen.de/speedtest/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "DE selfhost",
+    "server": "https://tuschy.com/speed/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "DE selfhost #2",
+    "server": "https://speedtest.mills.io/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "UK The University of Edinburgh",
+    "server": "https://www.speedtest2.cahss.ed.ac.uk/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "UK AAISP LibreSpeed",
+    "server": "https://speedtest.aa.net.uk/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "DK selfhost",
+    "server": "https://www.henrik.nielsenhvam.dk/speedtest2/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "NL TNGNET Roosendaal",
+    "server": "https://speedtest.tngnet.com/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "FR Universite Paris",
+    "server": "https://speedtest.dsi.univ-paris-diderot.fr/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "IT Universita' degli Studi del Sannio",
+    "server": "https://st.unisannio.it/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "IT Universita' degli Studi di Trieste",
+    "server": "https://speedtest.units.it/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "IT selfhost Rome",
+    "server": "https://speedtestremoto.paoloserver1.synology.me/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "IT selfhost",
+    "server": "https://libre-speed.server.paolocalcagni.com/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "HU University Gyor",
+    "server": "https://speedtest.sze.hu/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "CH EASY-CERT Bern",
+    "server": "https://speed.easy-cert.cloud/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "PRTV prtvmedia.tv (Turkish service)",
+    "server": "https://speed.prtvmedia.tv/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "US CESD Oregon",
+    "server": "https://speedtest.clackesd.k12.or.us/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "US University of South Florida",
+    "server": "https://www.hii.usf.edu/speedtest/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "ID Grahamedia",
+    "server": "https://speedtest.grahamedia.net.id/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "SG selfhost",
+    "server": "https://librespeed.guillaumea.fr/",
     "dlURL": "backend/garbage.php",
     "ulURL": "backend/empty.php",
     "pingURL": "backend/empty.php",
