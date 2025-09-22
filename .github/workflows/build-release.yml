@@ -1,0 +1,64 @@
+name: Build and Release APK
+
+on:
+  push:
+    paths:
+      - 'Speedtest-Android/app/src/main/assets/ServerList.json'
+      - 'Speedtest-Android/app/src/main/assets/serverlist.json'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '8'
+
+      - name: Cache Gradle files
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+        working-directory: Speedtest-Android
+
+      - name: Build release APK
+        run: ./gradlew assembleRelease
+        working-directory: Speedtest-Android
+
+      - name: Determine release version
+        id: version
+        run: echo "release_version=$(date -u +'%Y.%m.%d')" >> "$GITHUB_OUTPUT"
+
+      - name: Prepare APK artifact
+        run: |
+          set -euo pipefail
+          APK_SOURCE="Speedtest-Android/app/build/outputs/apk/release/app-release-unsigned.apk"
+          if [ ! -f "$APK_SOURCE" ]; then
+            echo "Expected APK not found at $APK_SOURCE" >&2
+            exit 1
+          fi
+          cp "$APK_SOURCE" "Speedtest-Android/librespeed-${{ steps.version.outputs.release_version }}.apk"
+
+      - name: Publish GitHub release
+        uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ steps.version.outputs.release_version }}
+          name: ${{ steps.version.outputs.release_version }}
+          body: |
+            Automated build triggered by an update to the server list.
+          artifacts: Speedtest-Android/librespeed-${{ steps.version.outputs.release_version }}.apk
+          allowUpdates: true
+          replaceArtifacts: true
