@@ -1,4 +1,6 @@
 /_PRIVATE
 .directory
+*.keystore
+*.jks
 
  

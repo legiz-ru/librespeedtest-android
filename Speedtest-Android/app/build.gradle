@@ -1,18 +1,44 @@
 apply plugin: 'com.android.application'
 
+def releaseVersion = System.getenv("RELEASE_VERSION") ?: '1.2.3'
+def releaseVersionCodeValue = System.getenv("RELEASE_VERSION_CODE")
+def releaseVersionCode = releaseVersionCodeValue?.isInteger() ? releaseVersionCodeValue.toInteger() : 1
+
+def releaseKeystorePath = System.getenv("RELEASE_KEYSTORE_PATH")
+def releaseKeystorePassword = System.getenv("RELEASE_KEYSTORE_PASSWORD") ?: ''
+def releaseKeyAlias = System.getenv("RELEASE_KEY_ALIAS") ?: ''
+def releaseKeyPassword = System.getenv("RELEASE_KEY_PASSWORD") ?: ''
+def hasReleaseKeystore = releaseKeystorePath ? file(releaseKeystorePath).exists() : false
+
 android {
     compileSdkVersion 28
     buildToolsVersion "29.0.0"
+
+    signingConfigs {
+        maybeCreate('release')
+        release {
+            if (hasReleaseKeystore) {
+                storeFile file(releaseKeystorePath)
+                storePassword releaseKeystorePassword
+                keyAlias releaseKeyAlias
+                keyPassword releaseKeyPassword
+            }
+        }
+    }
+
     defaultConfig {
-        applicationId "your.name.here.speedtest"
+        applicationId "com.legiz_ru.librespeed"
         minSdkVersion 15
         targetSdkVersion 28
-        versionCode 9
-        versionName '1.2.3'
+        versionCode releaseVersionCode
+        versionName releaseVersion
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
+            if (hasReleaseKeystore) {
+                signingConfig signingConfigs.release
+            }
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
