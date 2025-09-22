@@ -34,31 +34,79 @@ jobs:
         run: chmod +x gradlew
         working-directory: Speedtest-Android
 
-      - name: Build release APK
-        run: ./gradlew assembleRelease
-        working-directory: Speedtest-Android
-
       - name: Determine release version
         id: version
-        run: echo "release_version=$(date -u +'%Y.%m.%d')" >> "$GITHUB_OUTPUT"
+        run: |
+          release_version="$(date -u +'%Y.%m.%d')"
+          release_version_code="$(date -u +'%Y%m%d')"
+          echo "release_version=${release_version}" >> "$GITHUB_OUTPUT"
+          echo "release_version_code=${release_version_code}" >> "$GITHUB_OUTPUT"
+
+      - name: Prepare signing key
+        id: signing
+        shell: bash
+        run: |
+          if [ -n "${{ secrets.RELEASE_KEYSTORE_BASE64 }}" ]; then
+            echo "${{ secrets.RELEASE_KEYSTORE_BASE64 }}" | base64 --decode > Speedtest-Android/release.keystore
+            echo "keystore_path=${GITHUB_WORKSPACE}/Speedtest-Android/release.keystore" >> "$GITHUB_OUTPUT"
+            echo "keystore_password=${{ secrets.RELEASE_KEYSTORE_PASSWORD }}" >> "$GITHUB_OUTPUT"
+            echo "key_alias=${{ secrets.RELEASE_KEY_ALIAS }}" >> "$GITHUB_OUTPUT"
+            echo "key_password=${{ secrets.RELEASE_KEY_PASSWORD }}" >> "$GITHUB_OUTPUT"
+          else
+            keytool -genkeypair \
+              -alias librespeed \
+              -keyalg RSA \
+              -keysize 2048 \
+              -validity 36500 \
+              -storepass android \
+              -keypass android \
+              -dname "CN=LibreSpeed,O=LibreSpeed,C=US" \
+              -keystore Speedtest-Android/release.keystore
+            echo "keystore_path=${GITHUB_WORKSPACE}/Speedtest-Android/release.keystore" >> "$GITHUB_OUTPUT"
+            echo "keystore_password=android" >> "$GITHUB_OUTPUT"
+            echo "key_alias=librespeed" >> "$GITHUB_OUTPUT"
+            echo "key_password=android" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build release APK
+        env:
+          RELEASE_VERSION: ${{ steps.version.outputs.release_version }}
+          RELEASE_VERSION_CODE: ${{ steps.version.outputs.release_version_code }}
+          RELEASE_KEYSTORE_PATH: ${{ steps.signing.outputs.keystore_path }}
+          RELEASE_KEYSTORE_PASSWORD: ${{ steps.signing.outputs.keystore_password }}
+          RELEASE_KEY_ALIAS: ${{ steps.signing.outputs.key_alias }}
+          RELEASE_KEY_PASSWORD: ${{ steps.signing.outputs.key_password }}
+        run: ./gradlew assembleRelease
+        working-directory: Speedtest-Android
 
       - name: Prepare APK artifact
         run: |
           set -euo pipefail
-          APK_SOURCE="Speedtest-Android/app/build/outputs/apk/release/app-release-unsigned.apk"
+          APK_SOURCE="Speedtest-Android/app/build/outputs/apk/release/app-release.apk"
           if [ ! -f "$APK_SOURCE" ]; then
             echo "Expected APK not found at $APK_SOURCE" >&2
             exit 1
           fi
           cp "$APK_SOURCE" "Speedtest-Android/librespeed-${{ steps.version.outputs.release_version }}.apk"
 
-      - name: Publish GitHub release
-        uses: ncipollo/release-action@v1
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
         with:
-          tag: ${{ steps.version.outputs.release_version }}
+          name: librespeed-${{ steps.version.outputs.release_version }}.apk
+          path: Speedtest-Android/librespeed-${{ steps.version.outputs.release_version }}.apk
+          if-no-files-found: error
+
+      - name: Publish GitHub release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ steps.version.outputs.release_version }}
           name: ${{ steps.version.outputs.release_version }}
           body: |
             Automated build triggered by an update to the server list.
-          artifacts: Speedtest-Android/librespeed-${{ steps.version.outputs.release_version }}.apk
-          allowUpdates: true
-          replaceArtifacts: true
+          files: Speedtest-Android/librespeed-${{ steps.version.outputs.release_version }}.apk
+          fail_on_unmatched_files: true
+          draft: false
+          prerelease: false
+          overwrite: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
