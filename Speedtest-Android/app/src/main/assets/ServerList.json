@@ -802,6 +802,14 @@
     "getIpURL": "backend/getIP.php"
   },
   {
+    "name": "FR LineTim Lyon",
+    "server": "https://cdn.linetim.fr/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
     "name": "IT Universita' degli Studi del Sannio",
     "server": "https://st.unisannio.it/",
     "dlURL": "backend/garbage.php",
@@ -842,6 +850,38 @@
     "getIpURL": "backend/getIP.php"
   },
   {
+    "name": "ES RedIRIS - Madrid",
+    "server": "https://speedtest.rediris.es/backend/",
+    "dlURL": "garbage.php",
+    "ulURL": "empty.php",
+    "pingURL": "empty.php",
+    "getIpURL": "getIP.php"
+  },
+  {
+    "name": "ES CESGA - Santiago de Compostela",
+    "server": "https://speedtest-rediris.cesga.es/",
+    "dlURL": "garbage.php",
+    "ulURL": "empty.php",
+    "pingURL": "empty.php",
+    "getIpURL": "getIP.php"
+  },
+  {
+    "name": "ES RedCAYLE - León",
+    "server": "https://speedtest-rediris.scayle.es/backend/",
+    "dlURL": "garbage.php",
+    "ulURL": "empty.php",
+    "pingURL": "empty.php",
+    "getIpURL": "getIP.php"
+  },
+  {
+    "name": "ES University of Valencia",
+    "server": "https://speed.uv.es/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
     "name": "CH EASY-CERT Bern",
     "server": "https://speed.easy-cert.cloud/",
     "dlURL": "backend/garbage.php",
@@ -874,6 +914,14 @@
     "getIpURL": "backend/getIP.php"
   },
   {
+    "name": "CA University of Toronto",
+    "server": "https://st.unisannio.it/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
     "name": "ID Grahamedia",
     "server": "https://speedtest.grahamedia.net.id/",
     "dlURL": "backend/garbage.php",
@@ -884,6 +932,46 @@
   {
     "name": "SG selfhost",
     "server": "https://librespeed.guillaumea.fr/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "JP ConoHa WING Tokyo",
+    "server": "https://librespeed-cnhwg51.risupunet.jp/",
+    "dlURL": "sokudo/garbage.php",
+    "ulURL": "sokudo/empty.php",
+    "pingURL": "sokudo/empty.php",
+    "getIpURL": "sokudo/getIP.php"
+  },
+  {
+    "name": "BR Amazon Brasil",
+    "server": "https://testedevelocidade.serverdo.in/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "BR Cloud Gerenciado EUA",
+    "server": "https://testedevelocidadeus.serverdo.in/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "BR Cloud Gerenciado Brasil",
+    "server": "https://testedevelocidadebr.serverdo.in/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "NZ selfhost",
+    "server": "https://speedtest.hocrex.com/",
     "dlURL": "backend/garbage.php",
     "ulURL": "backend/empty.php",
     "pingURL": "backend/empty.php",
