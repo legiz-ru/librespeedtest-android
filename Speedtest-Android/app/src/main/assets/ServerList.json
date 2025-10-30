@@ -594,6 +594,14 @@
     "getIpURL": "backend/getIP.php"
   },
   {
+    "name": "RU Telecom Samara LLC",
+    "server": "https://speed.tcsmr.ru/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
     "name": "RU SibSvyaz Krasnoyarsk",
     "server": "http://speedtest.sibsvyaz.com/",
     "dlURL": "backend/garbage.php",
@@ -754,6 +762,14 @@
     "getIpURL": "backend/getIP.php"
   },
   {
+    "name": "DE PC-SPEZIALIST Hannover",
+    "server": "https://speed.pcspezialist-hannover.de/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
     "name": "DE selfhost #2",
     "server": "https://speedtest.mills.io/",
     "dlURL": "backend/garbage.php",
@@ -794,6 +810,14 @@
     "getIpURL": "backend/getIP.php"
   },
   {
+    "name": "NL selfhost Scaleway",
+    "server": "https://speedtest.rys.rs/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
     "name": "FR Universite Paris",
     "server": "https://speedtest.dsi.univ-paris-diderot.fr/",
     "dlURL": "backend/garbage.php",
@@ -804,6 +828,22 @@
   {
     "name": "FR LineTim Lyon",
     "server": "https://cdn.linetim.fr/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "FR selfhost OVH ",
+    "server": "https://speed.celeri.net/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "FR selfhost Proxad / Free SAS",
+    "server": "https://kermouse.fr/librespeed/",
     "dlURL": "backend/garbage.php",
     "ulURL": "backend/empty.php",
     "pingURL": "backend/empty.php",
@@ -882,6 +922,14 @@
     "getIpURL": "backend/getIP.php"
   },
   {
+    "name": "ES selfhost IONOS",
+    "server": "https://speed.selfhosted.org.es/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
     "name": "CH EASY-CERT Bern",
     "server": "https://speed.easy-cert.cloud/",
     "dlURL": "backend/garbage.php",
@@ -932,6 +980,22 @@
   {
     "name": "SG selfhost",
     "server": "https://librespeed.guillaumea.fr/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "TW selfhost",
+    "server": "https://twst.9xdzof.tech/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "JP selfhost",
+    "server": "https://jpst.9xdzof.tech/",
     "dlURL": "backend/garbage.php",
     "ulURL": "backend/empty.php",
     "pingURL": "backend/empty.php",
