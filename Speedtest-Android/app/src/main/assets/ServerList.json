@@ -962,6 +962,46 @@
     "getIpURL": "backend/getIP.php"
   },
   {
+    "name": "US AlaskaCom Anchorage",
+    "server": "https://speedtest.anc.acsalaska.net/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "US AlaskaCom Fairbanks",
+    "server": "https://speedtest.fai.acsalaska.net/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "US AlaskaCom Juneau",
+    "server": "https://speedtest.jnu.acsalaska.net/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "US AlaskaCom Seattle",
+    "server": "https://speedtest.sea.acsalaska.net/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "US AlaskaCom Soldotna",
+    "server": "https://speedtest.sol.acsalaska.net/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
     "name": "CA University of Toronto",
     "server": "https://st.unisannio.it/",
     "dlURL": "backend/garbage.php",
