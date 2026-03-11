@@ -538,6 +538,46 @@
     "getIpURL": "backend/getIP.php"
   },
   {
+    "name": "RU speedtest.msk.ru",
+    "server": "https://speedtest.msk.ru/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "RU Mark Izhevsk",
+    "server": "https://librespeed.mark-itt.ru/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "RU G COM Balashiha",
+    "server": "https://librespeed.10g-com.ru/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "RU Mediateleset RostovObl Donetsk",
+    "server": "https://www.mediatele.net/",
+    "dlURL": "lspeed/backend/garbage.php",
+    "ulURL": "lspeed/backend/empty.php",
+    "pingURL": "lspeed/backend/empty.php",
+    "getIpURL": "lspeed/backend/getIP.php"
+  },
+  {
+    "name": "RU PTK Penza",
+    "server": "https://test.ppcom.ru/",
+    "dlURL": "lspeed/backend/garbage.php",
+    "ulURL": "lspeed/backend/empty.php",
+    "pingURL": "lspeed/backend/empty.php",
+    "getIpURL": "lspeed/backend/getIP.php"
+  },
+  {
     "name": "RU selfhost iteco.cloud MSK",
     "server": "https://st-mc.prits.ru/",
     "dlURL": "backend/garbage.php",
