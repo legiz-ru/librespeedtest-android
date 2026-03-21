@@ -1266,6 +1266,14 @@
     "getIpURL": "backend/getIP.php"
   },
   {
+    "name": "US DartNode Houston",
+    "server": "https://speedtest.dartnode.com/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
     "name": "CA University of Toronto",
     "server": "https://st.unisannio.it/",
     "dlURL": "backend/garbage.php",
@@ -1356,6 +1364,14 @@
   {
     "name": "NZ selfhost",
     "server": "https://speedtest.hocrex.com/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "Vercel Librespeed",
+    "server": "https://librespeed.vercel.app/",
     "dlURL": "backend/garbage.php",
     "ulURL": "backend/empty.php",
     "pingURL": "backend/empty.php",
