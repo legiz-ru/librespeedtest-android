@@ -224,6 +224,14 @@
     "getIpURL": "getIP"
   },
   {
+    "name": "(Hostkey) Warsaw, Poland",
+    "server": "https://spd-plsrv.hostkey.com/",
+    "dlURL": "garbage",
+    "ulURL": "empty",
+    "pingURL": "empty",
+    "getIpURL": "getIP"
+  },
+  {
     "name": "(Hostkey) Amsterdam, Netherlands",
     "server": "https://spd-nlsrv.hostkey.com/",
     "dlURL": "garbage",
@@ -311,9 +319,9 @@
     "pingURL": "empty",
     "getIpURL": "getIP"
   },
-  {
+{
     "name": "(LibreSpeed) Amsterdam, Netherlands (Clouvider)",
-    "server": "//ams.speedtest.clouvider.net/backend",
+    "server": "https://ams.speedtest.clouvider.net/backend",
     "id": 51,
     "dlURL": "garbage.php",
     "ulURL": "empty.php",
@@ -335,7 +343,7 @@
   },
   {
     "name": "(LibreSpeed) Atlanta, United States (Clouvider)",
-    "server": "//atl.speedtest.clouvider.net/backend",
+    "server": "https://atl.speedtest.clouvider.net/backend",
     "id": 53,
     "dlURL": "garbage.php",
     "ulURL": "empty.php",
@@ -346,7 +354,7 @@
   },
   {
     "name": "(LibreSpeed) Bangalore, India (DigitalOcean)",
-    "server": "//in1.backend.librespeed.org/",
+    "server": "https://in1.backend.librespeed.org/",
     "id": 75,
     "dlURL": "garbage.php",
     "ulURL": "empty.php",
@@ -364,7 +372,7 @@
     "pingURL": "empty.php",
     "getIpURL": "getIP.php",
     "sponsorName": "Consortium GARR",
-    "sponsorURL": "//garr.it"
+    "sponsorURL": "https://garr.it"
   },
   {
     "name": "(LibreSpeed) Bologna, Italy (GARR)",
@@ -375,7 +383,7 @@
     "pingURL": "empty.php",
     "getIpURL": "getIP.php",
     "sponsorName": "Consortium GARR",
-    "sponsorURL": "//garr.it"
+    "sponsorURL": "https://garr.it"
   },
   {
     "name": "(LibreSpeed) Bucharest, Romania (ByteShield)",
@@ -412,7 +420,7 @@
   },
   {
     "name": "(LibreSpeed) Frankfurt, Germany (Clouvider)",
-    "server": "//fra.speedtest.clouvider.net/backend",
+    "server": "https://fra.speedtest.clouvider.net/backend",
     "id": 50,
     "dlURL": "garbage.php",
     "ulURL": "empty.php",
@@ -444,30 +452,52 @@
     "sponsorURL": "https://bardia.tech/"
   },
   {
+    "name": "(LibreSpeed) Grand Rapids, Michigan (RackGenius)",
+    "server": "https://mispeed.rackgenius.com/",
+    "id": 100,
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php",
+    "sponsorName": "RackGenius",
+    "sponsorURL": "https://rackgenius.com/"
+  },
+  {
     "name": "(LibreSpeed) Helsinki, Finland (3) (Hetzner)",
-    "server": "//finew.openspeed.org/",
+    "server": "https://finew.openspeed.org/",
     "id": 22,
     "dlURL": "backend437/garbage.php",
     "ulURL": "backend437/empty.php",
     "pingURL": "backend437/empty.php",
     "getIpURL": "backend437/getIP.php",
     "sponsorName": "Daily Health Insurance Group",
-    "sponsorURL": "//dhig.net/"
+    "sponsorURL": "https://dhig.net/"
   },
   {
     "name": "(LibreSpeed) Helsinki, Finland (5) (Hetzner)",
-    "server": "//fast.kabi.tk/",
+    "server": "https://fast.kabi.tk/",
     "id": 24,
     "dlURL": "garbage.php",
     "ulURL": "empty.php",
     "pingURL": "empty.php",
     "getIpURL": "getIP.php",
     "sponsorName": "KABI.tk",
-    "sponsorURL": "//kabi.tk"
+    "sponsorURL": "https://kabi.tk"
+  },
+  {
+    "name": "(LibreSpeed) Helsinki, Finland (Hetzner)",
+    "server": "https://www.librespeed.fi/",
+    "id": 101,
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php",
+    "sponsorName": "Pekka Jalonen",
+    "sponsorURL": "https://jalonen.net/"
   },
   {
     "name": "(LibreSpeed) Johannesburg, South Africa (Host Africa)",
-    "server": "//za1.backend.librespeed.org/",
+    "server": "https://za1.backend.librespeed.org/",
     "id": 70,
     "dlURL": "garbage.php",
     "ulURL": "empty.php",
@@ -489,7 +519,7 @@
   },
   {
     "name": "(LibreSpeed) London, England (Clouvider)",
-    "server": "//lon.speedtest.clouvider.net/backend",
+    "server": "https://lon.speedtest.clouvider.net/backend",
     "id": 49,
     "dlURL": "garbage.php",
     "ulURL": "empty.php",
@@ -500,7 +530,7 @@
   },
   {
     "name": "(LibreSpeed) Los Angeles, United States (1) (Clouvider)",
-    "server": "//la.speedtest.clouvider.net/backend",
+    "server": "https://la.speedtest.clouvider.net/backend",
     "id": 54,
     "dlURL": "garbage.php",
     "ulURL": "empty.php",
@@ -522,7 +552,7 @@
   },
   {
     "name": "(LibreSpeed) New York, United States (2) (Clouvider)",
-    "server": "//nyc.speedtest.clouvider.net/backend",
+    "server": "https://nyc.speedtest.clouvider.net/backend",
     "id": 52,
     "dlURL": "garbage.php",
     "ulURL": "empty.php",
@@ -543,8 +573,19 @@
     "sponsorURL": "https://fosshost.org"
   },
   {
+    "name": "(LibreSpeed) Novi Sad, Vojvodina, Serbia (E-CAPS.net)",
+    "server": "https://speed1.e-caps.net",
+    "id": 103,
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php",
+    "sponsorName": "E-CAPS.net",
+    "sponsorURL": "https://e-caps.net"
+  },
+  {
     "name": "(LibreSpeed) Nuremberg, Germany (1) (Hetzner)",
-    "server": "//de1.backend.librespeed.org",
+    "server": "https://de1.backend.librespeed.org",
     "id": 28,
     "dlURL": "garbage.php",
     "ulURL": "empty.php",
@@ -555,7 +596,7 @@
   },
   {
     "name": "(LibreSpeed) Nuremberg, Germany (2) (Hetzner)",
-    "server": "//de4.backend.librespeed.org",
+    "server": "https://de4.backend.librespeed.org",
     "id": 27,
     "dlURL": "garbage.php",
     "ulURL": "empty.php",
@@ -566,7 +607,7 @@
   },
   {
     "name": "(LibreSpeed) Nuremberg, Germany (3) (Hetzner)",
-    "server": "//de3.backend.librespeed.org",
+    "server": "https://de3.backend.librespeed.org",
     "id": 30,
     "dlURL": "garbage.php",
     "ulURL": "empty.php",
@@ -577,7 +618,7 @@
   },
   {
     "name": "(LibreSpeed) Nuremberg, Germany (4) (Hetzner)",
-    "server": "//de5.backend.librespeed.org",
+    "server": "https://de5.backend.librespeed.org",
     "id": 31,
     "dlURL": "garbage.php",
     "ulURL": "empty.php",
@@ -588,7 +629,7 @@
   },
   {
     "name": "(LibreSpeed) Nuremberg, Germany (6) (Hetzner)",
-    "server": "//librespeed.lukas-heinrich.com/",
+    "server": "https://librespeed.lukas-heinrich.com/",
     "id": 46,
     "dlURL": "garbage.php",
     "ulURL": "empty.php",
@@ -616,12 +657,12 @@
     "ulURL": "empty.php",
     "pingURL": "empty.php",
     "getIpURL": "getIP.php",
-    "sponsorName": "Kamil Szczepański",
+    "sponsorName": "Kamil Szczepanski",
     "sponsorURL": "https://kamilszczepanski.com"
   },
   {
     "name": "(LibreSpeed) Prague, Czech Republic (CESNET)",
-    "server": "//speedtest.cesnet.cz",
+    "server": "https://speedtest.cesnet.cz",
     "id": 79,
     "dlURL": "backend/garbage.php",
     "ulURL": "backend/empty.php",
@@ -632,7 +673,7 @@
   },
   {
     "name": "(LibreSpeed) Prague, Czech Republic (Turris)",
-    "server": "//librespeed.turris.cz",
+    "server": "https://librespeed.turris.cz",
     "id": 85,
     "dlURL": "backend/garbage.php",
     "ulURL": "backend/empty.php",
@@ -650,7 +691,7 @@
     "pingURL": "empty.php",
     "getIpURL": "getIP.php",
     "sponsorName": "Consortium GARR",
-    "sponsorURL": "//garr.it"
+    "sponsorURL": "https://garr.it"
   },
   {
     "name": "(LibreSpeed) Serbia (SOX)",
@@ -709,7 +750,7 @@
   },
   {
     "name": "(LibreSpeed) Vilnius, Lithuania (RackRay)",
-    "server": "//lt1.backend.librespeed.org/",
+    "server": "https://lt1.backend.librespeed.org/",
     "id": 69,
     "dlURL": "garbage.php",
     "ulURL": "empty.php",
@@ -728,6 +769,17 @@
     "getIpURL": "getIP.php",
     "sponsorName": "Riverside Rocks",
     "sponsorURL": "https://riverside.rocks"
+  },
+  {
+    "name": "(LibreSpeed) Volzhsky, Russia (PowerNet)",
+    "server": "https://speedtest.powernet.com.ru/",
+    "id": 102,
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php",
+    "sponsorName": "PowerNet",
+    "sponsorURL": "https://powernet.com.ru/"
   },
   {
     "name": "CZ cesnet IPv4",
@@ -1106,6 +1158,14 @@
     "getIpURL": "backend/getIP.php"
   },
   {
+    "name": "FR OVH Gravelines",
+    "server": "https://gra.perf.overthebox.net/",
+    "dlURL": "garbage",
+    "ulURL": "empty",
+    "pingURL": "empty",
+    "getIpURL": "getIP"
+  },
+  {
     "name": "IT Universita' degli Studi del Sannio",
     "server": "https://st.unisannio.it/",
     "dlURL": "backend/garbage.php",
@@ -1376,5 +1436,93 @@
     "ulURL": "backend/empty.php",
     "pingURL": "backend/empty.php",
     "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "AMS Netherlands (ams-static-14)",
+    "server": "https://speed.ams-static-14.cdntogo.net/speedtest/",
+    "dlURL": "garbage.php",
+    "ulURL": "empty.php",
+    "pingURL": "empty.php",
+    "getIpURL": "getIP.php"
+  },
+  {
+    "name": "AMS Netherlands (ams-static-15)",
+    "server": "https://speed.ams-static-15.cdntogo.net/speedtest/",
+    "dlURL": "garbage.php",
+    "ulURL": "empty.php",
+    "pingURL": "empty.php",
+    "getIpURL": "getIP.php"
+  },
+  {
+    "name": "MSK Russia (msk-static-05)",
+    "server": "https://speed.msk-static-05.cdntogo.net/speedtest/",
+    "dlURL": "garbage.php",
+    "ulURL": "empty.php",
+    "pingURL": "empty.php",
+    "getIpURL": "getIP.php"
+  },
+  {
+    "name": "MSK Russia (msk-static-06)",
+    "server": "https://speed.msk-static-06.cdntogo.net/speedtest/",
+    "dlURL": "garbage.php",
+    "ulURL": "empty.php",
+    "pingURL": "empty.php",
+    "getIpURL": "getIP.php"
+  },
+  {
+    "name": "issou.best FR",
+    "server": "http://st1.issou.best/",
+    "dlURL": "garbage.php",
+    "ulURL": "empty.php",
+    "pingURL": "empty.php",
+    "getIpURL": "getIP.php"
+  },
+  {
+    "name": "issou.best US",
+    "server": "http://st2.issou.best/",
+    "dlURL": "garbage.php",
+    "ulURL": "empty.php",
+    "pingURL": "empty.php",
+    "getIpURL": "getIP.php"
+  },
+  {
+    "name": "CookieJarApps Frankfurt",
+    "server": "https://speedtest.cookiejarapps.com/",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "CookieJarApps Paris",
+    "server": "https://par1.cookiejarapps.com",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "CookieJarApps San Francisco",
+    "server": "https://st2.cookiejarapps.com",
+    "dlURL": "backend/garbage.php",
+    "ulURL": "backend/empty.php",
+    "pingURL": "backend/empty.php",
+    "getIpURL": "backend/getIP.php"
+  },
+  {
+    "name": "Cloudflare Worker (SEEK AU staging)",
+    "server": "https://speed.staging.seek.com/",
+    "dlURL": "down?bytes=10000000",
+    "ulURL": "up",
+    "pingURL": "ping",
+    "getIpURL": "https://ip.seby.io"
+  },
+  {
+    "name": "Cloudflare Worker (seby.io)",
+    "server": "https://speed.seby.io/",
+    "dlURL": "down?bytes=10000000",
+    "ulURL": "up",
+    "pingURL": "ping",
+    "getIpURL": "https://ip.seby.io"
   }
 ]
